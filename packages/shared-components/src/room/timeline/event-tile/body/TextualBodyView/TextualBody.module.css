@@ -41,6 +41,12 @@
     display: flex;
 }
 
+/* Let the body shrink below its content's intrinsic width (e.g. a wide code block),
+   so the text wraps within the tile instead of overflowing past the edited marker. */
+.annotated > :first-child {
+    min-width: 0;
+}
+
 .annotatedInline {
     display: inline-flex;
 }

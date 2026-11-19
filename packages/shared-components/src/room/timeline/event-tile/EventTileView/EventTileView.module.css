@@ -125,6 +125,11 @@
     text-align: start;
 }
 
+/* While editing, the composer's formatting bar and autocomplete extend outside the body slot. */
+.root.stateEditing .slotBody > * {
+    overflow: visible;
+}
+
 .slotAvatar {
     cursor: pointer;
     user-select: none;
